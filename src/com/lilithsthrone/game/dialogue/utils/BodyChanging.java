@@ -2430,12 +2430,6 @@ public class BodyChanging {
 		}
 				
 		// Feral limitations:
-		if(body.isFeral()!=BodyChanging.getTarget().isFeral()) {
-			if(body.isFeral()) {
-				return UtilText.parse(BodyChanging.getTarget(), "[npc.Name] cannot transform into a [style.colourFeral(feral body)] as [npc.her] current body isn't feral!");
-			}
-			return UtilText.parse(BodyChanging.getTarget(), "[npc.Name] cannot transform into a [style.colourHuman(non-feral body)] as [npc.her] current body is feral!");
-		}
 
 		// Demon/Youko limitations:
 		if(isDemonTFMenu() || BodyChanging.getTarget().isYouko() || BodyChanging.getTarget() instanceof Elemental) {
