@@ -25500,8 +25500,7 @@ public abstract class GameCharacter implements XMLSaving {
 	 * Ferals, elementals, demons, angels, slimes, and dolls can't have their race transformed.
 	 */
 	public boolean isAbleToHaveRaceTransformed() {
-		return !this.isFeral()
-				&& !this.isDoll()
+		return !this.isDoll()
 				&& !this.getTrueSubspecies().isAbleToSelfTransform();
 	}
 	
